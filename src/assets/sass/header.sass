@@ -1,0 +1,54 @@
+@import "./theme.sass"
+@font-face 
+    font-family: "ConcertOne"
+    src: url("./../fonts/ConcertOne-Regular.ttf")
+@font-face 
+    font-family: "Poppin"
+    src: url("./../fonts/Poppins-Regular.ttf")
+
+.header
+    display: flex
+    justify-content: space-between
+    height: 4vw
+    img
+        margin-left: 10vw
+        height: 100%
+    div
+        width: 55vw
+        display: flex
+        justify-content: space-between
+        align-items: center
+    a
+        color: $primary
+        text-decoration: none
+        font-size: 1.3vw
+        font-family: "Poppin"
+        &:hover
+            color: $secondary
+            cursor: pointer
+    button
+        &:hover
+            cursor: pointer
+    .signup
+        background-color: $secondary
+        border: none
+        font-family: "ConcertOne"
+        color: white
+        font-size: 1vw
+        padding: .6vw 2vw
+        border-radius: .5vw
+        margin-right: -1.5vw
+        &:hover
+            background-color: $secondary-hover
+    .signin
+        background-color: $primary
+        border: none
+        font-family: "ConcertOne"
+        color: white
+        font-size: 1vw
+        padding: .6vw 2vw
+        border-radius: .5vw
+        margin-left: -1.5vw
+        margin-right: 10vw
+        &:hover
+            background-color: $primary-hover
